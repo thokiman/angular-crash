@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-root', // custom html tag
+  templateUrl: './app.component.html', // template html you are using
+  styleUrls: ['./app.component.css'] // can put more than one style file in array
 })
 export class AppComponent {
-  title = 'angular-crash';
+
+
+  //custom method
+  // lifecycle method
 }

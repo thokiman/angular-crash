@@ -1,0 +1,16 @@
+<!-- (click) => event handler attribute syntax -->
+<!-- <button
+  (click)="onClick()"
+  [ngStyle]="{ 'background-color': color }" => directive style for adding atrribute
+  class="btn"
+>
+  {{ text }}
+</button> => (onClick) is not reusable for event handle, use @Output event for reusable-->
+
+<button
+  (click)="onClick()"
+  [ngStyle]="{ 'background-color': color }"
+  class="btn"
+>
+  {{ text }}
+</button>

@@ -1,0 +1,15 @@
+<app-add-task (onAddTask)="addTask($event)"></app-add-task>
+
+<!-- *ngFor directive syntax -->
+<!-- (onToggleRemainder)="toggleRemainder(task)" means call the toggleRemainder func at task.component-->
+<app-task-item
+  (onToggleRemainder)="toggleRemainder(task)"
+  (onDeleteTask)="deleteTask(task)"
+  *ngFor="let task of tasks"
+  [task]="task"
+>
+  <!-- [task] = "task" where "task" is individual item from tasks -->
+  <!-- ^^ variable from let task of tasks -->
+  <!-- {{ task.text }} -->
+  <!-- [task] = task ,individual task for every tasks, passing our props to [task] -->
+</app-task-item>
